@@ -1,0 +1,157 @@
+* {
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(80, 219, 84, 1) 0%, rgba(0, 212, 255, 1) 90%);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    height: 580px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 160px repeat(5, 100px);
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 5px black;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    color: black;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00000010;
+}
+
+button:hover {
+    background-color: #1fd7bb;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1fd7bb;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 5px #00000033;
+}
+
+#fila1 {
+    font-size: 1.7rem;
+}
+
+#fila2 {
+    font-size: 2rem;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 400px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 5px black;
+    text-align: center;
+    align-items: center;
+}
+
+.contenido {
+    width: 310px;
+    align-items: center;
+}
+
+.campo_numero {
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.campo_operador h4 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+.campo_numero h4 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.cuadro h3 {
+    font-size: 2rem;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.numero {
+    width: 300px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.campo_operador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+#select {
+    background-color: #1fd7bb;
+    text-align-last: center;
+    width: 190px;
+    color: white;
+    border-right: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.boton {
+    width: 150px;
+    height: 40px;
+    background-color: #1fd7bb;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}

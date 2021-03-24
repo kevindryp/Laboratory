@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cuadro">
+            <h3>Calculadora</h3>
+            <form action="./CalcServlet" method="POST">
+                <div class="contenido">
+                    <div class="campo_numero">
+                        <h4>Primer número:</h4>
+                        <input type="number" class="numero" name="valor1" required/>
+                    </div>
+                    <div class="campo_numero">
+                        <h4>Segundo número:</h4>
+                        <input type="number" class="numero" name="valor2" required/>
+                    </div>
+                    <br>
+                    <div class="campo_operador">
+                        <h4>Operación:</h4>
+                        <select name="operador" id="select" required/>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                            <option value="^">^</option>
+                        </select>
+                    </div>
+                    <br>
+                    <input type="submit" class="boton" value="Calcular">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
